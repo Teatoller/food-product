@@ -1,11 +1,9 @@
 import { fetchRecipes } from './api';
-import { showRecipes, getSearchQuery, setSearchButtonHandler } from './ui';
+import { displayRecipes, getSearchQuery } from './ui';
 import './styles.css';
 
-async function searchRecipes() {
+document.getElementById('search-button').addEventListener('click', async () => {
   const query = getSearchQuery();
   const recipes = await fetchRecipes(query);
-  showRecipes(recipes);
-}
-
-setSearchButtonHandler(searchRecipes);
+  displayRecipes(recipes);
+});
