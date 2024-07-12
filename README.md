@@ -23,9 +23,11 @@
 
 # Link to live site
 on the terminal run
-1. `npm install`
-2. `npx webpack serve --config webpack.config.js --mode development` or
-3. `npx webpack serve --open`
+1. create .env file `touch .env`
+2. add your secret key from this api documentation `https://spoonacular.com/food-api/console#Dashboard` (REACT_APP_SPOONACULAR_API_KEY=your secret key)
+3. `npm install`
+4. `npx webpack serve --config webpack.config.js --mode development` or
+5. `npx webpack serve --open`
 
 This will open your browser and load the application.
 Tou should see the text area and a button,
@@ -33,7 +35,7 @@ and you should be able to input sudoku data.
 
 hhh
 
-# Link to live site
+# Link to live site n/a
 [food-product-application]()
 
 
